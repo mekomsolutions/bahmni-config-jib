@@ -52,12 +52,12 @@
         },
         "patientSearch": {
             "address": {
-                "label": "Region",
-                "placeholder": "Region",
-                "field": "region"
+                "label": "Place",
+                "placeholder": "Place",
+                "field": "county_district"
             },
             "customAttributes": {
-                "label": "LOCAL_NAMES",
+                "label": "الإسم/phone/email",
                 "placeholder": "Enter",
                 "fields": ["givenNameLocal", "familyNameLocal","phoneNumber","email"]
             }
