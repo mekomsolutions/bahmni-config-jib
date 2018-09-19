@@ -68,7 +68,13 @@
             }
         },
         "afterVisitSaveForwardUrl" : "./index.html#/search",
-        "printOptions":[],
+        "printOptions":[
+            {
+                "translationKey": "REGISTRATION_PRINT_REG_CARD_KEY",
+                "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/print.html",
+                "shortcutKey": "p"
+            }
+        ],
         "conceptSetUI": {
             "JIB_Pulse Data": {
                 "hideAbnormalButton": false,

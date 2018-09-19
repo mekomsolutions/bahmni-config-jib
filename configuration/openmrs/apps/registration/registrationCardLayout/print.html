@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/print.css"/>
+
+<p>
+    <img style="float: left; width: 85mm; height: 15;" src="/bahmni_config/openmrs/apps/registration/registrationCardLayout/images/dsjmc-rect-logo.png" alt=""  />
+    <img ng-src="{{patient.image}}" style="float: right; width: 30mm; height: 30mm; "
+    onerror="this.onerror=null;this.src='../images/blank.jpeg';" />
+</p>
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
+<p>Hello {{ patient.givenName }},&nbsp;Welcome to Salam IVF Fertility Center</p>
+<p>&nbsp;</p>
+<table class="main" cellpadding="0" cellspacing="1" style= "margin-left: 1mm; margin-right: 1mm" width="100%" >
+<tbody>
+<tr>
+<td style="width: 25%; text-align: left;">&nbsp;Name in English</td>
+<td style="width: 50%; text-align: center;">&nbsp; {{patient.givenName}} {{ patient.familyName}}  </td>
+<td style="width: 25%; text-align: right; ">الاسم بالانجليزي&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;Name in Arabic</td>
+    <td style="width: 50%; text-align: center;">&nbsp;{{patient.familyNameLocal}} {{patient.givenNameLocal}} </td>
+    <td style="width: 25%; text-align: right;"> الاسم بالعربي&nbsp;</td>
+</tr>
+<tr><td style="width: 25%">&nbsp;Age</td>
+    <td style="width: 50%; text-align: center;">&nbsp; {{patient.age.years}} </td>
+    <td style="width: 25%; text-align: right;"> العمر&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;DOB</td>
+    <td style="width: 50%; text-align: center;">&nbsp; {{ patient.birthdate | date:'dd/MM/yyyy' }}</td>
+    <td style="width: 25%; text-align: right;"> تاريخ الولادة&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;Gender</td>
+    <td style="width: 50%; text-align: center">&nbsp; {{patient.gender}} </td>
+    <td style="width: 25%; text-align: right;">النوع&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;Address</td>
+    <td style="width: 50%; text-align: center">&nbsp; {{patient.address.region}} {{patient.address.countyDistrict}} {{patient.address.postalCode}}, {{patient.address.country}} </td>
+    <td style="width: 25%; text-align: right;">العنوان&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;Government ID</td>
+    <td style="width: 50%; text-align: center"><table class="inner" >
+        <tr>
+            <td class="inner" > 
+                <div ng-if="patient.extraIdentifiers[0].identifier" > <img id="barcode"
+                    jsbarcode-value="{{patient.extraIdentifiers[0].identifier}}"
+                    jsbarcode-width="1"
+                    jsbarcode-height="50"
+                    jsbarcode-margin="0"
+                    jsbarcode-displayValue="true"
+                    jsbarcode-textAlign="center"
+                    jsbarcode-textMargin="0"
+                    jsbarcode-fontSize="14"
+               /> </div>
+            </td>
+        </tr>
+    </table> </td>
+    <td style="width: 25%; text-align: right;">البطاقة&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;MRN</td>
+    <td style="width: 50%; text-align: center">
+        <table class="inner">
+        <tr>
+            <td class="inner">
+                <div ng-if="patient.primaryIdentifier.identifier" > <img id="barcode"
+                    jsbarcode-value="{{patient.primaryIdentifier.identifier}}"
+                    jsbarcode-width="1"
+                    jsbarcode-height="50"
+                    jsbarcode-margin="0"
+                    jsbarcode-displayValue="true"
+                    jsbarcode-textAlign="center"
+                    jsbarcode-textMargin="0"
+                    jsbarcode-fontSize="14"
+               /> </div>
+            </td>
+        </tr>
+    </table>
+</td>
+    <td style="width: 25%; text-align: right;">رقم الملف الطبي&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<script type="text/javascript" src="/bahmni_config/openmrs/apps/JsBarcode.all.min.js"></script>
+<script>
+    (function() {
+        JsBarcode("#barcode").init();
+    })();
+</script>

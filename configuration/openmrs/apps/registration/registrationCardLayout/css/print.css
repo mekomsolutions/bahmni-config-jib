@@ -1,0 +1,8 @@
+table.main, th, table.main td:not(.inner) {
+    border: 1px solid #12a658;
+    border-collapse: collapse;
+ }
+ .inner{
+    width: 25%;
+    margin: auto;
+ }
