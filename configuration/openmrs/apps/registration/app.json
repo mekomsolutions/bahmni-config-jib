@@ -31,7 +31,7 @@
         },
         "addressHierarchy": {
             "showAddressFieldsTopDown": true,
-            "strictAutocompleteFromLevel": "region"
+            "strictAutocompleteFromLevel": "stateProvince"
         },
         "relationshipTypeMap": {
             "Parent":"patient",
