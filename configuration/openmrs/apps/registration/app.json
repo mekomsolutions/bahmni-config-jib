@@ -51,8 +51,8 @@
         },
         "patientSearch": {
             "address": {
-                "label": "Place",
-                "placeholder": "Place",
+                "label": "Area",
+                "placeholder": "Area",
                 "field": "county_district"
             },
             "customAttributes": {
