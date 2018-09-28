@@ -38,7 +38,11 @@
 </tr>
 <tr>
     <td style="width: 25%">&nbsp;Address</td>
-    <td style="width: 50%; text-align: center">&nbsp; {{patient.address.address4}} {{patient.address.address3}} {{patient.address.address2}} {{patient.address.postalCode}} {{patient.address.countyDistrict}} {{patient.address.stateProvince}},   {{patient.address.country}} </td>
+    <td style="width: 50%; text-align: center">&nbsp; 
+        <span ng-if="patient.address.address2">Flat {{patient.address.address2}}, </span>
+        <span ng-if="patient.address.address3">Buliding {{patient.address.address3}}, </span>
+        <span ng-if="patient.address.address4">Road {{patient.address.address4}}, </span>
+        {{patient.address.postalCode}} {{patient.address.countyDistrict}} {{patient.address.stateProvince}},   {{patient.address.country}} </td>
     <td style="width: 25%; text-align: right;">العنوان&nbsp;</td>
 </tr>
 <tr>
