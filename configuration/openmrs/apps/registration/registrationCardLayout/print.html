@@ -8,7 +8,7 @@
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
-<p>Hello {{ patient.givenName }},&nbsp;Welcome to Salam IVF Fertility Center</p>
+<p>Hello {{ patient.givenName }},&nbsp;welcome to Dr Salam Jibrel Medical Center</p>
 <p>&nbsp;</p>
 <table class="main" cellpadding="0" cellspacing="1" style= "margin-left: 1mm; margin-right: 1mm" width="100%" >
 <tbody>
@@ -19,7 +19,7 @@
 </tr>
 <tr>
     <td style="width: 25%">&nbsp;Name in Arabic</td>
-    <td style="width: 50%; text-align: center;">&nbsp;{{patient.familyNameLocal}} {{patient.givenNameLocal}} </td>
+    <td style="width: 50%; text-align: center;">&nbsp; {{patient.givenNameLocal}} {{patient.familyNameLocal}}  </td>
     <td style="width: 25%; text-align: right;"> الاسم بالعربي&nbsp;</td>
 </tr>
 <tr><td style="width: 25%">&nbsp;Age</td>
@@ -38,8 +38,18 @@
 </tr>
 <tr>
     <td style="width: 25%">&nbsp;Address</td>
-    <td style="width: 50%; text-align: center">&nbsp; {{patient.address.stateProvince}} {{patient.address.countyDistrict}} {{patient.address.postalCode}}, {{patient.address.country}} </td>
+    <td style="width: 50%; text-align: center">&nbsp; {{patient.address.address4}} {{patient.address.address3}} {{patient.address.address2}} {{patient.address.postalCode}} {{patient.address.countyDistrict}} {{patient.address.stateProvince}},   {{patient.address.country}} </td>
     <td style="width: 25%; text-align: right;">العنوان&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;Phone Number</td>
+    <td style="width: 50%; text-align: center">&nbsp; {{patient.phoneNumber}} <div ng-if="patient.secondaryPhoneNumber" > {{ patient.secondaryPhoneNumber }} </div> </td>
+    <td style="width: 25%; text-align: right;">رقم الهاتف&nbsp;</td>
+</tr>
+<tr>
+    <td style="width: 25%">&nbsp;Email</td>
+    <td style="width: 50%; text-align: center">&nbsp; {{patient.email}} <div ng-if="patient.secondaryEmail" > {{ patient.secondaryEmail }} </div> </td>
+    <td style="width: 25%; text-align: right;">البريد الالكتروني&nbsp;</td>
 </tr>
 <tr>
     <td style="width: 25%">&nbsp;Government ID</td>
