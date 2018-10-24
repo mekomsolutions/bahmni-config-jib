@@ -4,7 +4,97 @@
         "displayByDefault":true,
         "maxRecentlyViewedPatients":10,
         "sections":{
-            
+            "visits":{
+                "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
+                "type":"visits",
+                "displayOrder":1,
+                "showDetailsButton": true,
+                "dashboardConfig":{
+                    "title":null,
+                    "maximumNoOfVisits":5,
+                    "groupByVisits":true
+                }
+            },
+            "history": {
+                "type": "forms",
+                "isObservation":true,
+                "displayOrder": 14,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "showDetailsButton": true,
+                    "numberOfVisits": 5,
+                    "conceptNames": [
+                        "Cambodia_History Form"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_History Form"
+                    ],
+                    "pivotTable":{
+                    }
+                },
+                "translationKey": "DASHBOARD_TITLE_HISTORY_KEY"
+            },
+            "customControl": {
+                "type": "custom",
+                "displayOrder": 2,
+                "showDetailsButton": true,
+                "config": {
+                    "showDetailsButton": true,
+                    "translationKey": "IMPL_IMMUNIZATIONS",
+                    "template": "<immunization></immunization>",
+                    "immunizationSets":[
+                        "JIB_Polio1 Set",
+                        "JIB_Polio2 Set",
+                        "JIB_Polio3 Set",
+                        "JIB_IPV Set",
+                        "JIB_DTP-Hep-Hip1 Set",
+                        "JIB_DTP-Hep-Hip2 Set",
+                        "JIB_DTP-Hep-Hip3 Set",
+                        "JIB_PCV1 Set",
+                        "JIB_PCV2 Set",
+                        "JIB_PCV3 Set",
+                        "JIB_MR*** Set",
+                        "JIB_JE Set",
+                        "JIB_BCG Set",
+                        "JIB_HepB at birth Set",
+                        "JIB_MR1 Set",
+                        "JIB_Tetanus1 Set",
+                        "JIB_Tetanus2 Set",
+                        "JIB_Tetanus3 Set",
+                        "JIB_Tetanus4 Set",
+                        "JIB_Tetanus5 Set"
+                    ],
+                    "immunizationQuestions":[
+                        "JIB_New Immunization"
+                    ],
+                    "immunizationsDisplayed": [
+                        "JIB_Polio1",
+                        "JIB_Polio2",
+                        "JIB_Polio3",
+                        "JIB_IPV",
+                        "JIB_DTP-Hep-Hip1",
+                        "JIB_DTP-Hep-Hip2",
+                        "JIB_DTP-Hep-Hip3",
+                        "JIB_PCV1",
+                        "JIB_PCV2",
+                        "JIB_PCV3",
+                        "JIB_MR***",
+                        "JIB_JE",
+                        "JIB_BCG",
+                        "JIB_HepB at birth",
+                        "JIB_MR1",
+                        "JIB_Tetanus1",
+                        "JIB_Tetanus2",
+                        "JIB_Tetanus3",
+                        "JIB_Tetanus4",
+                        "JIB_Tetanus5"
+                    ]
+                }
+            }
         }
     }
 }

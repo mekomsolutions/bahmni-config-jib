@@ -7,7 +7,26 @@
             "header": "Visit",
             "logo": "../images/bahmniLogo.png"
         },
+        "defaultSections": false,
+        "sections": {
+            "obser":{
+                "type": "observation",
+                "displayOrder": 2,
+                "translationKey":"Observations",
+                "config": {
+                    "conceptNames": [
+                        "JIB_Consultation Form",
+                        "JIB_History Form",
+                        "JIB_Immunizations Form" 
+                    ]
+                }
+            }
+        }
+    },
+    "stubTab":{
+        "translationKey": " ",
         "defaultSections": true,
-        "sections": {}
+        "sections": {
+        }
     }
 }

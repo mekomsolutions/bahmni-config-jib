@@ -61,7 +61,578 @@
         "maxConceptSetLevels": 3,
         "allowOnlyCodedDiagnosis": false,
         "conceptSetUI": {
-            
+            "JIB_Chief Complaint Duration": {
+                "dropdown": true,
+                "disableAddNotes": true
+            },
+            "JIB_Complaint 2 Duration": {
+                "dropdown": true,
+                "disableAddNotes": true
+            },
+            "JIB_Complaint 3 Duration": {
+                "dropdown": true,
+                "disableAddNotes": true
+            },
+            "JIB_Chief Complaint common": {
+                "dropdown": true,
+                "disableAddNotes": true
+            },
+            "JIB_Complaint 2 common": {
+                "dropdown": true,
+                "disableAddNotes": true
+            },
+            "JIB_Complaint 3 common": {
+                "dropdown": true,
+                "disableAddNotes": true
+            },
+            "Chief Complaint Data": {
+                "autocomplete":true,
+                "codedConceptName":"Chief Complaint",
+                "durationRequired": false,
+                "allowAddMore": true
+            },
+            "JIB_Complaint Desc common": {
+                "disableAddNotes": true,
+                "multiSelect": true
+            },
+            "JIB_Pregnancy Test": {
+                "disableAddNotes": true
+            },
+            "JIB_New Immunization": {
+                "multiSelect": true
+            },
+            "JIB_Past Medical History": {
+                "multiSelect": true
+            },
+            "JIB_Referred To": {
+                "required": true,
+                "conciseText": true
+            },
+            "JIB_ANC Referral": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Immunizations": {
+                "multiSelect": true
+            },
+            "JIB_General Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_HEENT Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Cardiovascular Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Respiratory Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Gastrointestinal Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Genitourinary Female Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Genitourinary Male Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Neurologic Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Musculoskeletal Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Endocrine Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Skin Symptoms": {
+                "multiSelect": true
+            },
+            "JIB_Skin Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Skin Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Head Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },        
+            "JIB_Head Circumference": {
+                "disableAddNotes": true
+            },
+            "JIB_Head Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Neck Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Neck Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Ears Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Ears Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Eyes Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Eyes Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Chest and Lungs Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Chest and Lungs Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Cardiovascular Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Cardiovascular Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Regular Rate and Rhythm": {
+                "disableAddNotes": true
+            },
+            "JIB_Carotid bruit": {
+                "disableAddNotes": true
+            },
+            "JIB_Heartrate": {
+                "disableAddNotes": true
+            },
+            "JIB_Abdomen Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Abdomen Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Genitourinary Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Genitourinary Female Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Genitourinary Male Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Flank and Back Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Flank and Back Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Musculoskeletal and Neurological Exam": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Musculoskeletal Exam Abnormalities": {
+                "multiSelect": true,
+                "disableAddNotes": true
+            },
+            "JIB_Missing Teeth": {
+                "multiSelect": true,
+                "autocomplete": true
+            },
+            "JIB_Teeth Filled": {
+                "multiSelect": true,
+                "autocomplete": true
+            },
+            "JIB_Teeth Extracted": {
+                "multiSelect": true,
+                "autocomplete": true
+            },
+            "JIB_Pulse Data": {
+                "hideAbnormalButton": false,
+                "disableAddNotes": true
+            },
+            "JIB_Systolic Blood Pressure Data": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Diastolic Blood Pressure Data": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Temperature Data": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Respiratory Rate Data": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Oxygen Saturation Data": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Capillary Refill Time Data": {
+              "disableAddNotes": true,
+              "hideAbnormalButton": false
+            },
+            "JIB_New Case": {
+              "required": true,
+              "disableAddNotes": true
+            },
+            "JIB_Polio1": {
+              "disableAddNotes": true
+            },
+            "JIB_Polio2": {
+              "disableAddNotes": true
+            },
+            "JIB_Polio3": {
+              "disableAddNotes": true
+            },
+            "JIB_IPV": {
+              "disableAddNotes": true
+            },
+            "JIB_IPV, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_DTP-Hep-Hip1": {
+              "disableAddNotes": true
+            },
+            "JIB_DTP-Hep-Hip2": {
+              "disableAddNotes": true
+            },
+            "JIB_DTP-Hep-Hip3": {
+              "disableAddNotes": true
+            },
+            "JIB_PCV1": {
+              "disableAddNotes": true
+            },
+            "JIB_PCV2": {
+              "disableAddNotes": true
+            },
+            "JIB_PCV3": {
+              "disableAddNotes": true
+            },
+            "JIB_MR1": {
+              "disableAddNotes": true
+            },
+            "JIB_JE": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus1": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus2": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus3": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus4": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus5": {
+              "disableAddNotes": true
+            },
+            "JIB_MR***": {
+              "disableAddNotes": true
+            },
+            "JIB_BCG": {
+              "disableAddNotes": true
+            },
+            "JIB_Polio1, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Polio2, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Polio3, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_DTP-Hep-Hip1, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_DTP-Hep-Hip2, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_DTP-Hep-Hip3, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_PCV1, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_PCV2, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_PCV3, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_MR1, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_JE, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_MR***, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus1, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus2, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus3, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus4, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Tetanus5, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_BCG, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_HepB at birth": {
+              "disableAddNotes": true
+            },
+            "JIB_HepB at birth, time administered after birth": {
+              "disableAddNotes": true
+            },
+            "JIB_Medications": {
+              "disableAddNotes": true
+            },
+            "JIB_Has Allergies": {
+              "disableAddNotes": true
+            },
+            "JIB_Muscle strength": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Deep Tendon Reflex": {
+              "hideAbnormalButton": false,
+              "disableAddNotes": true
+            },
+            "JIB_Other Physical Abnormalities": {
+              "disableAddNotes": true
+            },
+            "JIB_Is Small Dental Surgery Performed": {
+              "disableAddNotes": true
+            },
+            "JIB_Coded Small Dental Surgery Performed": {
+              "multiSelect": true,
+              "disableAddNotes": true
+            },
+            "JIB_Other Small Dental Surgery": {
+              "disableAddNotes": true
+            },
+            "JIB_Scaling": {
+              "disableAddNotes": true
+            },
+            "JIB_Prevention Education": {
+              "disableAddNotes": true
+            },
+            "JIB_Prevention Fluoride": {
+              "disableAddNotes": true
+            },
+            "JIB_ANC Referral Reason": {
+                "disableAddNotes": true,
+                "multiSelect": true
+            },
+            "JIB_ANC_Symptoms": {
+                "disableAddNotes": true,
+                "multiSelect": true
+            },
+            "JIB_ANC Visit Number": {
+                "required": true,
+                "disableAddNotes": true
+            },
+            "JIB_Gestation": {
+                "disableAddNotes":true
+            },
+            "WEIGHT": {
+                "disableAddNotes":true
+            },        
+            "HEIGHT": {
+                "disableAddNotes":true
+            },
+            "JIB_Pulse": {
+                "disableAddNotes":true
+            },
+            "JIB_Fetal Pulse": {
+                "disableAddNotes":true
+            },
+            "JIB_Height Of Uterus": {
+                "disableAddNotes":true
+            },        
+            "JIB_Stomach_Diameter": {
+                "disableAddNotes":true
+            },
+            "JIB_Presenting Part": {
+                "disableAddNotes":true
+            },
+            "JIB_Education Topic": {
+                "disableAddNotes":true,
+                "multiSelect": true
+            },
+            "JIB_Followup Appointment Date": {
+                "disableAddNotes":true,
+                "allowFutureDates":true
+            },
+            "JIB_Pregnancy Number": {
+                "disableAddNotes":true
+            },
+            "JIB_Living Children": {
+                "disableAddNotes":true
+            },
+            "JIB_Abortions": {
+                "disableAddNotes":true
+            },
+            "JIB_Date of Last Delivery": {
+                "disableAddNotes":true
+            },
+            "JIB_Newborn Survived": {
+                "disableAddNotes":true
+            },
+            "JIB_Date of Last Menstrual Period": {
+                "disableAddNotes":true
+            },
+            "JIB_Expected Due Date": {
+                "disableAddNotes":true,
+                "allowFutureDates":true
+            },
+            "JIB_Problems During Last Pregnancy": {
+                "disableAddNotes":true,
+                "multiSelect":true
+            },
+            "JIB_Problems During Last Delivery": {
+                "disableAddNotes":true
+            },
+            "JIB_Previous Caesarean Section": {
+                "disableAddNotes":true
+            },
+            "JIB_Acceptor": {
+                "required":true,
+                "disableAddNotes":true,
+                "multiSelect":true
+            },
+            "JIB_Stopped Contraception": {
+                "disableAddNotes":true
+            },
+            "JIB_Contraceptives Past": {
+                "disableAddNotes":true,
+                "multiSelect":true
+            },
+            "JIB_Contraceptives Present": {
+                "disableAddNotes":true,
+                "multiSelect":true
+            },
+            "JIB_Contraceptives Received": {
+                "disableAddNotes":true,
+                "multiSelect":true
+            },
+            "JIB_Contraceptive Education": {
+                "disableAddNotes":true,
+                "multiSelect":true
+            },
+            "JIB_LEU" : {
+              "disableAddNotes": true
+            },
+            "JIB_NIT" : {
+              "disableAddNotes": true
+            },
+            "JIB_URO" : {
+              "disableAddNotes": true
+            },
+            "JIB_PRO" : {
+              "disableAddNotes": true
+            },
+            "JIB_pH" : {
+              "disableAddNotes": true
+            },
+            "JIB_BLO" : {
+              "disableAddNotes": true
+            },
+            "JIB_SG" : {
+              "disableAddNotes": true
+            },
+            "JIB_KET" : {
+              "disableAddNotes": true
+            },
+            "JIB_BIL" : {
+              "disableAddNotes": true
+            },
+            "JIB_GLU" : {
+              "disableAddNotes": true
+            },
+            "JIB_ASC" : {
+              "disableAddNotes": true
+            },
+            "JIB_Fasting Blood Glucose" : {
+              "disableAddNotes": true
+            },
+            "JIB_PP Blood Glucose" : {
+              "disableAddNotes": true
+            },
+            "JIB_Malaria Rapid Test" : {
+              "disableAddNotes": true
+            },
+            "JIB_Date of Delivery" : {
+              "disableAddNotes": true
+            },
+            "JIB_Newborn Sex" : {
+              "disableAddNotes": true
+            },
+            "JIB_Newborn Weight" : {
+              "disableAddNotes": true
+            },
+            "JIB_PNC Problems During Delivery" : {
+              "multiSelect": true,
+              "disableAddNotes": true
+            },
+            "JIB_PNC First Visit" : {
+              "disableAddNotes": true
+            },
+            "JIB_Maternal Care" : {
+              "multiSelect": true,
+              "disableAddNotes": true
+            },
+            "JIB_Neonatal Care" : {
+              "multiSelect": true,
+              "disableAddNotes": true
+            },
+            "JIB_Counselling" : {
+              "multiSelect": true,
+              "disableAddNotes": true
+            },
+            "JIB_PNC Next Appointment" : {
+              "disableAddNotes": true,
+              "allowFutureDates": true
+            },
+            "Offline Diagnosis Data": {
+                "codedConceptName":"Offline Diagnosis",
+                "autocomplete":  true,
+                "allowAddMore": true
+            },
+            "defaults": {
+            }
         },
         "visitPage": {
             "observationDisplay": {
