@@ -274,7 +274,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'JIB_Genitourinary Female Symptoms' : function (formName, formFieldValues, patient) {
+    'JIB_Genitourinary Exam Details' : function (formName, formFieldValues, patient) {
         var fieldValue = formFieldValues['JIB_Genitourinary Female Symptoms'];
         var patientGender = patient['gender'];
         var sections = {

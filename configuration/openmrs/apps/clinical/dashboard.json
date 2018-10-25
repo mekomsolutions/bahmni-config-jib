@@ -24,14 +24,14 @@
                     "showDetailsButton": true,
                     "numberOfVisits": 5,
                     "conceptNames": [
-                        "Cambodia_History Form"
+                        "JIB_History Form"
                     ]
                 },
                 "expandedViewConfig":{
                     "showDetailsButton": true,
                     "showGroupDateTime":false,
                     "conceptNames":[
-                        "Cambodia_History Form"
+                        "JIB_History Form"
                     ],
                     "pivotTable":{
                     }
