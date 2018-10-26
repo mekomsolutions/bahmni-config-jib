@@ -24,6 +24,26 @@
         "order": 1,
         "requiredPrivilege": "app:clinical:observationTab"
       },
+      "bahmniClinicalConceptSetGroupObservationsVitalsForm": {
+        "id": "bahmni.clinical.conceptSetGroup.observations.VitalsForm",
+        "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+          "default": true,
+          "conceptName": "JIB_Vital Signs Extended Form"
+        },
+        "requiredPrivilege": "app:clinical"
+      },
+      "bahmniClinicalConceptSetGroupObservationsLabForm": {
+        "id": "bahmni.clinical.conceptSetGroup.observations.LabForm",
+        "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+          "default": true,
+          "conceptName": "JIB_Lab Tests Results Form"
+        },
+        "requiredPrivilege": "app:clinical"
+      },
         "bahmniClinicalConceptSetGroupObservationsImmunizationsSet": {
         "id": "bahmni.clinical.conceptSetGroup.observations.immunizationsSet",
         "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",

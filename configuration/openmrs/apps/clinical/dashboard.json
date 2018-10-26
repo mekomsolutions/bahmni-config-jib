@@ -37,6 +37,28 @@
                     }
                 },
                 "translationKey": "DASHBOARD_TITLE_HISTORY_KEY"
+            },"labTest": {
+                "type": "forms",
+                "isObservation":true,
+                "displayOrder": 50,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "showDetailsButton": true,
+                    "numberOfVisits": 5,
+                    "conceptNames": [
+                        "JIB_Lab Tests Results Form"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "JIB_Lab Tests Results Form"
+                    ],
+                    "pivotTable":{
+                    }
+                },
+                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY"
             },
             "customControl": {
                 "type": "custom",
@@ -93,6 +115,103 @@
                         "JIB_Tetanus4",
                         "JIB_Tetanus5"
                     ]
+                }
+            },
+            "testsInClinic":{
+                "type":"observationGraph",
+                "title":"Glucose",
+                "translationKey": "IMPL_TESTS_IN_CLINIC",
+                "config":{
+                    "yAxisConcepts":[
+                        "JIB_Fasting Blood Glucose",
+                        "JIB_PP Blood Glucose",
+                        "JIB_pH"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":145
+            },
+            "vitals":{
+                "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
+                "type":"vitals",
+                "isObservation":true,
+                "displayOrder":7,
+                "dashboardConfig":{
+                    "showDetailsButton": true,
+                    "scope":"latest",
+                    "conceptNames":[
+                        "JIB_Pulse Data",
+                        "JIB_Systolic Blood Pressure Data",
+                        "JIB_Diastolic Blood Pressure Data",
+                        "JIB_Temperature Data",
+                        "JIB_Respiratory Rate Data",
+                        "JIB_Oxygen Saturation Data",
+                        "JIB_Capillary Refill Time Data",
+                        "Height",
+                        "WeighT",
+                        "BMI Data",
+                        "BMI Status Data"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "conceptNames":[
+                        "JIB_Pulse Data",
+                        "JIB_Diastolic Blood Pressure Data",
+                        "JIB_Systolic Blood Pressure Data",
+                        "JIB_Temperature Data",
+                        "JIB_Respiratory Rate Data",
+                        "JIB_Oxygen Saturation Data",
+                        "JIB_Capillary Refill Time Data",
+                        "Height",
+                        "WeighT",
+                        "BMI Data",
+                        "BMI Status Data"
+                    ],
+                    "pivotTable":{
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "JIB_Pulse Data",
+                            "JIB_Diastolic Blood Pressure Data",
+                            "JIB_Systolic Blood Pressure Data",
+                            "JIB_Temperature Data",
+                            "JIB_Respiratory Rate Data",
+                            "JIB_Oxygen Saturation Data",
+                            "JIB_Capillary Refill Time Data",
+                            "Height",
+                            "WeighT",
+                            "BMI Data",
+                            "BMI Status Data"
+                        ],
+                        "drugConcepts":[
+
+                        ],
+                        "labConcepts":[
+
+                        ]
+                    }
+                }
+            },
+            "treatments":{
+                "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
+                "type":"treatment",
+                "displayOrder":95,
+                "dashboardConfig":{
+                    "showDetailsButton": true,
+                    "showRoute":true,
+                    "showDrugForm":true,
+                    "numberOfVisits":5,
+                    "showOtherActive":true
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
+                    "showFlowSheet":true,
+                    "showListView":true,
+                    "showRoute":true,
+                    "showDrugForm":true,
+                    "showOtherActive":true
                 }
             }
         }
