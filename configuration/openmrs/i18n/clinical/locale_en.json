@@ -6,6 +6,7 @@
     "MODULE_LABEL_OPD_1_KEY": "OPD-1",
     "MODULE_LABEL_ALL_KEY": "All",
   
+    "IMPL_REFERRALS": "Referrals",
     "IMPL_TESTS_IN_CLINIC": "Tests in Clinic",
     "IMPL_IMMUNIZATIONS": "Immunizations",
     "DASHBOARD_TITLE_HISTORY_KEY": "History",

@@ -72,7 +72,58 @@
             "conceptName": "JIB_Consultation Form"
           },
           "requiredPrivilege": "app:clinical"
-        }
+        },
+
+  "bahmniClinicalConceptSetGroupObservationsANCForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.ANCForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "JIB_ANC Visit Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsANChistForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.ANChistForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "JIB_ANC Obstetric History Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsPNCForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.PNCForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "JIB_PNC Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsBirthSpacingForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.BirthSpacingForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "JIB_Birth Spacing Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsReferralForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.ReferralForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "JIB_Referral Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  }
         ,"bahmniClinicalBillingTreatment": {
         "id": "bahmni.clinical.billing.treatment",
         "extensionPointId": "org.bahmni.clinical.consultation.board",

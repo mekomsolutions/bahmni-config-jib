@@ -15,6 +15,48 @@
                     "groupByVisits":true
                 }
             },
+            "midwife": {
+                "type": "forms",
+                "hideEmptyDisplayControl": false,
+                "isObservation":true,
+                "displayOrder": 103,
+                "dashboardConfig": {
+                    "numberOfVisits": 5,
+                    "showDetailsButton": true,
+                    "showGroupDateTime":true,
+                    "conceptNames":[
+                        "JIB_ANC Obstetric History Form",
+                        "JIB_ANC Visit Form",
+                        "JIB_PNC Form",
+                        "JIB_Birth Spacing Form"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showGroupDateTime":false,
+                    "showDetailsButton": true,
+                    "conceptNames":[
+                        "JIB_ANC Obstetric History Form",
+                        "JIB_ANC Visit Form",
+                        "JIB_PNC Form",
+                        "JIB_Birth Spacing Form"
+                    ],
+                     "pivotTable":{
+                    }
+                },
+                "translationKey": "DASHBOARD_TITLE_GYNAECOLOGY_KEY"
+            },
+            "referral": {
+                "type": "vitals",
+                "isObservation":true,
+                "displayOrder": 117,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "showDetailsButton": true,
+                    "conceptNames": [ "JIB_Referred To", "JIB_Referral Notes", "JIB_Referred From"],
+                    "scope":"latest"
+                },
+                "translationKey": "IMPL_REFERRALS"
+            },
             "history": {
                 "type": "forms",
                 "isObservation":true,
