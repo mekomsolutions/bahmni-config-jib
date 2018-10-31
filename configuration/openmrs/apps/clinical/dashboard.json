@@ -255,6 +255,33 @@
                     "showDrugForm":true,
                     "showOtherActive":true
                 }
+            },
+            "weightBMI":{
+                "type":"observationGraph",
+                "title":"Weight / BMI",
+                "translationKey": "IMPL_WEIGHT_BMI",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":140
+            },
+            "growthChart":{
+                "type":"observationGraph",
+                "title":"Growth Chart",
+                "translationKey": "IMPL_GROWTH_CHART",
+                "config":{
+                    "yAxisConcepts":[
+                        "BMI"
+                    ],
+                    "referenceData":"growthChartReference.csv",
+                    "numberOfVisits":10
+                },
+                "displayOrder":150
             }
         }
     }
