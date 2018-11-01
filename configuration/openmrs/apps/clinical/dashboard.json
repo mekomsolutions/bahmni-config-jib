@@ -4,6 +4,14 @@
         "displayByDefault":true,
         "maxRecentlyViewedPatients":10,
         "sections":{
+            "diagnosis":{
+                "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
+                "type":"diagnosis",
+                "showDetailsButton": true,
+                "showCertainty":false,
+                "showOrder":false,
+                "displayOrder":10
+            },
             "visits":{
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
