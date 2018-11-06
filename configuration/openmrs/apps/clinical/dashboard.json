@@ -264,6 +264,21 @@
                     "showOtherActive":true
                 }
             },
+            "bpPulse":{
+                "type":"observationGraph",
+                "title":"BP / Pulse",
+                "translationKey": "IMPL_BP_PULSE",
+                "config":{
+                    "yAxisConcepts":[
+                        "JIB_Systolic Blood Pressure",
+                        "JIB_Diastolic Blood Pressure",
+                        "JIB_Pulse"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":120
+            },
             "weightBMI":{
                 "type":"observationGraph",
                 "title":"Weight / BMI",
@@ -278,18 +293,33 @@
                 },
                 "displayOrder":140
             },
-            "growthChart":{
-                "type":"observationGraph",
-                "title":"Growth Chart",
-                "translationKey": "IMPL_GROWTH_CHART",
-                "config":{
-                    "yAxisConcepts":[
-                        "BMI"
-                    ],
-                    "referenceData":"growthChartReference.csv",
-                    "numberOfVisits":10
+            "conditions": {
+                "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
+                "type": "conditionsList",
+                "displayOrder": 20
+            },
+            "attachments": {
+                "displayOrder": 85,
+                "type":"historyAndExamination",
+                "isObservation":true,
+                "displayType":"Half-Page",
+                "dashboardConfig":{
+                    "showGroupDateTime":true,
+                    "showDetailsButton": true,
+                    "conceptNames":[
+                        "Image", "Patient file"
+                    ]
                 },
-                "displayOrder":150
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Image", "Patient file"
+                    ],
+                    "pivotTable":{
+                    }
+                },
+                "translationKey": "IMPL_ATTACHMENTS_KEY"
             }
         }
     }

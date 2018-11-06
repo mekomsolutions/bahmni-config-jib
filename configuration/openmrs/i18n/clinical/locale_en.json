@@ -6,6 +6,8 @@
     "MODULE_LABEL_OPD_1_KEY": "OPD-1",
     "MODULE_LABEL_ALL_KEY": "All",
   
+    "IMPL_ATTACHMENTS_KEY": "Attachments",
+    "IMPL_BP_PULSE":"BP / Pulse",
     "IMPL_GROWTH_CHART":"Growth Chart",
     "IMPL_WEIGHT_BMI":"Weight / BMI",
     "IMPL_REFERRALS": "Referrals",
