@@ -38,7 +38,7 @@
         "extensionParams": {
             "conceptName": "JIB_Vital Signs Basic Set",
             "translationKey": "VITAL_SIGNS",
-            "conceptNames": ["JIB_Vital Signs Basic Set"],
+            "conceptNames": ["Height", "Weight", "BMI Data", "BMI Status Data"],
             "required": false,
             "showLatest": true
         },
