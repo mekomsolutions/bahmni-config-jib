@@ -321,6 +321,37 @@
                 },
                 "translationKey": "IMPL_ATTACHMENTS_KEY"
             }
+    },
+    "Prescription":{
+        "translationKey":"IMPL_DASHBOARD_TAB_PRESCRIPTION_KEY",
+        "displayByDefault":true,
+        "maxRecentlyViewedPatients":10,
+        "sections":{
+            "treatments":{  
+                "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
+                "type":"treatment",
+                "displayOrder":1,
+                "dashboardConfig":{  
+                    "showFlowSheet":false,
+                    "showListView":true,
+                    "showRoute":true,
+                    "showDrugForm":true,
+                    "numberOfVisits":1,
+                    "showOtherActive":false,
+                    "showDetailsButton":true
+                },
+                "expandedViewConfig":{  
+                    "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
+                    "showFlowSheet":false,
+                    "showListView":true,
+                    "showRoute":true,
+                    "showDrugForm":true,
+                    "numberOfVisits":1,
+                    "showOtherActive":false,
+                    "showDetailsButton":true
+                }
+            }
+        }
         }
     }
 }

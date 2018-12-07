@@ -13,6 +13,7 @@
     "IMPL_REFERRALS": "Referrals",
     "IMPL_TESTS_IN_CLINIC": "Tests in Clinic",
     "IMPL_IMMUNIZATIONS": "Immunizations",
+    "IMPL_DASHBOARD_TAB_PRESCRIPTION_KEY": "Prescription Printout",
     "DASHBOARD_TITLE_HISTORY_KEY": "History",
     "DASHBOARD_TITLE_LAB_RESULTS_KEY": "Lab Results",
     "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY": "Lab Orders Fulfillment",
