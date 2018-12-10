@@ -36,7 +36,7 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "JIB_Vital Signs Basic Set",
+            "conceptName": "JIB_Vital Signs Set",
             "translationKey": "VITAL_SIGNS",
             "conceptNames": ["Height", "Weight", "BMI Data", "BMI Status Data"],
             "required": false,
