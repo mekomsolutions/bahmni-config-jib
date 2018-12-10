@@ -95,6 +95,9 @@
                 "hideAbnormalButton": false,
                 "disableAddNotes": true
             },
+            "JIB_Oxygen Saturation Data": {
+                "disableAddNotes": true
+            },
             "HEIGHT": {
                 "disableAddNotes": true
             },
