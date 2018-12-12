@@ -321,6 +321,7 @@
                 },
                 "translationKey": "IMPL_ATTACHMENTS_KEY"
             }
+    }
     },
     "Prescription":{
         "translationKey":"IMPL_DASHBOARD_TAB_PRESCRIPTION_KEY",
@@ -353,5 +354,4 @@
             }
         }
         }
-    }
 }
