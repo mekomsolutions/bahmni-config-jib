@@ -296,43 +296,10 @@
               "required": true,
               "disableAddNotes": true
             },
-            "JIB_Polio1": {
+            "JIB_Polio": {
               "disableAddNotes": true
             },
-            "JIB_Polio2": {
-              "disableAddNotes": true
-            },
-            "JIB_Polio3": {
-              "disableAddNotes": true
-            },
-            "JIB_IPV": {
-              "disableAddNotes": true
-            },
-            "JIB_IPV, Date Given": {
-              "disableAddNotes": true
-            },
-            "JIB_DTP-Hep-Hip1": {
-              "disableAddNotes": true
-            },
-            "JIB_DTP-Hep-Hip2": {
-              "disableAddNotes": true
-            },
-            "JIB_DTP-Hep-Hip3": {
-              "disableAddNotes": true
-            },
-            "JIB_PCV1": {
-              "disableAddNotes": true
-            },
-            "JIB_PCV2": {
-              "disableAddNotes": true
-            },
-            "JIB_PCV3": {
-              "disableAddNotes": true
-            },
-            "JIB_MR1": {
-              "disableAddNotes": true
-            },
-            "JIB_JE": {
+            "JIB_Polio, Date Given": {
               "disableAddNotes": true
             },
             "JIB_Tetanus1": {
@@ -350,46 +317,55 @@
             "JIB_Tetanus5": {
               "disableAddNotes": true
             },
-            "JIB_MR***": {
-              "disableAddNotes": true
-            },
             "JIB_BCG": {
               "disableAddNotes": true
             },
-            "JIB_Polio1, Date Given": {
+            "JIB_Hep A": {
               "disableAddNotes": true
             },
-            "JIB_Polio2, Date Given": {
+            "JIB_Hep B": {
               "disableAddNotes": true
             },
-            "JIB_Polio3, Date Given": {
+            "JIB_Measles": {
               "disableAddNotes": true
             },
-            "JIB_DTP-Hep-Hip1, Date Given": {
+            "JIB_Mumps": {
+                "disableAddNotes": true
+            },
+            "JIB_Rubella": {
               "disableAddNotes": true
             },
-            "JIB_DTP-Hep-Hip2, Date Given": {
+            "JIB_Diphtheria": {
               "disableAddNotes": true
             },
-            "JIB_DTP-Hep-Hip3, Date Given": {
+            "JIB_Pertussis": {
               "disableAddNotes": true
             },
-            "JIB_PCV1, Date Given": {
+            "JIB_Tetanus": {
               "disableAddNotes": true
             },
-            "JIB_PCV2, Date Given": {
+            "JIB_Measles, Date Given": {
               "disableAddNotes": true
             },
-            "JIB_PCV3, Date Given": {
+            "JIB_Mumps, Date Given": {
+                "disableAddNotes": true
+            },
+            "JIB_Rubella, Date Given": {
               "disableAddNotes": true
             },
-            "JIB_MR1, Date Given": {
+            "JIB_Diphtheria, Date Given": {
               "disableAddNotes": true
             },
-            "JIB_JE, Date Given": {
+            "JIB_Pertussis, Date Given": {
               "disableAddNotes": true
             },
-            "JIB_MR***, Date Given": {
+            "JIB_Tetanus, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Hep A, Date Given": {
+              "disableAddNotes": true
+            },
+            "JIB_Hep B, Date Given": {
               "disableAddNotes": true
             },
             "JIB_Tetanus1, Date Given": {
@@ -408,12 +384,6 @@
               "disableAddNotes": true
             },
             "JIB_BCG, Date Given": {
-              "disableAddNotes": true
-            },
-            "JIB_HepB at birth": {
-              "disableAddNotes": true
-            },
-            "JIB_HepB at birth, time administered after birth": {
               "disableAddNotes": true
             },
             "JIB_Medications": {

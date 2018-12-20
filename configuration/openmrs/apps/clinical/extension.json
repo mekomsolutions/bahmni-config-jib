@@ -1,153 +1,165 @@
 {
-    "bahmniClinicalPatientsASearchActivePatientsByProvider": {
-        "id": "bahmni.clinical.patients.search.activePatients",
-        "extensionPointId": "org.bahmni.patient.search",
-        "type": "config",
-        "extensionParams": {
-          "searchHandler": "emrapi.sqlSearch.activePatients",
-          "translationKey": "Active",
-          "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
-        },
-        "label": "Active",
-        "order": 2,
-        "requiredPrivilege": "app:clinical"
+  "bahmniClinicalPatientsASearchActivePatientsByProvider": {
+      "id": "bahmni.clinical.patients.search.activePatients",
+      "extensionPointId": "org.bahmni.patient.search",
+      "type": "config",
+      "extensionParams": {
+        "searchHandler": "emrapi.sqlSearch.activePatients",
+        "translationKey": "Active",
+        "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
       },
-      "observations": {
-        "id": "bahmni.clinical.consultation.observations",
-        "extensionPointId": "org.bahmni.clinical.consultation.board",
-        "type": "link",
-        "label": "Observations",
-        "translationKey":"OBSERVATIONS_BOARD_LABEL_KEY",
-        "url": "concept-set-group/observations",
+      "label": "Active",
+      "order": 2,
+      "requiredPrivilege": "app:clinical"
+    },
+    "bahmniClinicalPatientsSearchAllPatients": {
+      "id": "bahmni.clinical.patients.search.allPatients",
+      "extensionPointId": "org.bahmni.patient.search",
+      "type": "config",
+      "extensionParams": {
+        "translationKey": "MODULE_LABEL_ALL_KEY",
+        "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
+      },
+      "label": "All",
+      "order": 5,
+      "requiredPrivilege": "app:clinical"
+    },
+    "observations": {
+      "id": "bahmni.clinical.consultation.observations",
+      "extensionPointId": "org.bahmni.clinical.consultation.board",
+      "type": "link",
+      "label": "Observations",
+      "translationKey":"OBSERVATIONS_BOARD_LABEL_KEY",
+      "url": "concept-set-group/observations",
+      "default": true,
+      "icon": "fa-user-md",
+      "order": 1,
+      "requiredPrivilege": "app:clinical:observationTab"
+        },
+    "bahmniClinicalConceptSetGroupObservationsVitalsForm": {
+      "id": "bahmni.clinical.conceptSetGroup.observations.VitalsForm",
+      "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+      "type": "config",
+      "extensionParams": {
         "default": true,
-        "icon": "fa-user-md",
-        "order": 1,
-        "requiredPrivilege": "app:clinical:observationTab"
-          },
-      "bahmniClinicalConceptSetGroupObservationsVitalsForm": {
-        "id": "bahmni.clinical.conceptSetGroup.observations.VitalsForm",
+        "conceptName": "JIB_Vital Signs Extended Form"
+      },
+      "requiredPrivilege": "app:clinical"
+    },
+    "bahmniClinicalConceptSetGroupObservationsLabForm": {
+      "id": "bahmni.clinical.conceptSetGroup.observations.LabForm",
+      "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+      "type": "config",
+      "extensionParams": {
+        "default": true,
+        "conceptName": "JIB_Lab Tests Results Form"
+      },
+      "requiredPrivilege": "app:clinical"
+    },
+      "bahmniClinicalConceptSetGroupObservationsImmunizationsSet": {
+      "id": "bahmni.clinical.conceptSetGroup.observations.immunizationsSet",
+      "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+      "type": "config",
+      "extensionParams": {
+        "default": true,
+        "conceptName": "JIB_Immunizations Form"
+      },
+      "requiredPrivilege": "app:clinical"
+    },"bahmniClinicalConceptSetGroupObservationsHistoryForm": {
+      "id": "bahmni.clinical.conceptSetGroup.observations.historyForm",
+      "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+      "type": "config",
+      "extensionParams": {
+        "default": true,
+        "conceptName": "JIB_History Form"
+      },
+        "requiredPrivilege": "app:clinical"
+      }
+      ,"bahmniClinicalConceptSetGroupObservationsConsultationForm": {
+        "id": "bahmni.clinical.conceptSetGroup.observations.consultationForm",
         "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
           "default": true,
-          "conceptName": "JIB_Vital Signs Extended Form"
+          "conceptName": "JIB_Consultation Form"
         },
         "requiredPrivilege": "app:clinical"
       },
-      "bahmniClinicalConceptSetGroupObservationsLabForm": {
-        "id": "bahmni.clinical.conceptSetGroup.observations.LabForm",
-        "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-        "type": "config",
-        "extensionParams": {
-          "default": true,
-          "conceptName": "JIB_Lab Tests Results Form"
-        },
-        "requiredPrivilege": "app:clinical"
-      },
-        "bahmniClinicalConceptSetGroupObservationsImmunizationsSet": {
-        "id": "bahmni.clinical.conceptSetGroup.observations.immunizationsSet",
-        "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-        "type": "config",
-        "extensionParams": {
-          "default": true,
-          "conceptName": "JIB_Immunizations Form"
-        },
-        "requiredPrivilege": "app:clinical"
-      },"bahmniClinicalConceptSetGroupObservationsHistoryForm": {
-        "id": "bahmni.clinical.conceptSetGroup.observations.historyForm",
-        "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-        "type": "config",
-        "extensionParams": {
-          "default": true,
-          "conceptName": "JIB_History Form"
-        },
-          "requiredPrivilege": "app:clinical"
-        }
-        ,"bahmniClinicalConceptSetGroupObservationsConsultationForm": {
-          "id": "bahmni.clinical.conceptSetGroup.observations.consultationForm",
-          "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-          "type": "config",
-          "extensionParams": {
-            "default": true,
-            "conceptName": "JIB_Consultation Form"
-          },
-          "requiredPrivilege": "app:clinical"
-        },
 
-  "bahmniClinicalConceptSetGroupObservationsANCForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.ANCForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "JIB_ANC Visit Form"
-    },
-    "requiredPrivilege": "app:clinical"
+"bahmniClinicalConceptSetGroupObservationsANCForm": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.ANCForm",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "JIB_ANC Visit Form"
   },
-  "bahmniClinicalConceptSetGroupObservationsANCObstetricHistoryForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.ANCObstetricHistoryForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "JIB_ANC Obstetric History Form"
-    },
-    "requiredPrivilege": "app:clinical"
+  "requiredPrivilege": "app:clinical"
+},
+"bahmniClinicalConceptSetGroupObservationsANCObstetricHistoryForm": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.ANCObstetricHistoryForm",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "JIB_ANC Obstetric History Form"
   },
-  "bahmniClinicalConceptSetGroupObservationsPNCForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.PNCForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "JIB_PNC Form"
-    },
-    "requiredPrivilege": "app:clinical"
+  "requiredPrivilege": "app:clinical"
+},
+"bahmniClinicalConceptSetGroupObservationsPNCForm": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.PNCForm",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "JIB_PNC Form"
   },
-  "bahmniClinicalConceptSetGroupObservationsBirthSpacingForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.BirthSpacingForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "JIB_Birth Spacing Form"
-    },
-    "requiredPrivilege": "app:clinical"
+  "requiredPrivilege": "app:clinical"
+},
+"bahmniClinicalConceptSetGroupObservationsBirthSpacingForm": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.BirthSpacingForm",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "JIB_Birth Spacing Form"
   },
-  "bahmniClinicalConceptSetGroupObservationsReferralForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.ReferralForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "JIB_Referral Form"
-    },
-    "requiredPrivilege": "app:clinical"
-  }
-        ,"bahmniClinicalBillingTreatment": {
-        "id": "bahmni.clinical.billing.treatment",
-        "extensionPointId": "org.bahmni.clinical.consultation.board",
-        "type": "link",
-        "label": "Medications",
-        "default": false,
-        "translationKey":"MEDICATIONS_BOARD_LABEL_KEY",
-        "extensionParams":{
-          "tabConfigName": "allMedicationTabConfig"
-        },
-        "url": "treatment",
-        "icon": "fa-user-md",
-        "order": 2,
-        "requiredPrivilege": "app:clinical:treatmentTab"
+  "requiredPrivilege": "app:clinical"
+},
+"bahmniClinicalConceptSetGroupObservationsReferralForm": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.ReferralForm",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "JIB_Referral Form"
+  },
+  "requiredPrivilege": "app:clinical"
+}
+      ,"bahmniClinicalBillingTreatment": {
+      "id": "bahmni.clinical.billing.treatment",
+      "extensionPointId": "org.bahmni.clinical.consultation.board",
+      "type": "link",
+      "label": "Medications",
+      "default": false,
+      "translationKey":"MEDICATIONS_BOARD_LABEL_KEY",
+      "extensionParams":{
+        "tabConfigName": "allMedicationTabConfig"
       },
-  "diagnosis": {
-    "id": "bahmni.clinical.consultation.diagnosis",
-    "extensionPointId": "org.bahmni.clinical.consultation.board",
-    "type": "link",
-    "label": "Diagnosis",
-    "translationKey":"DIAGNOSIS_BOARD_LABEL_KEY",
-    "url": "diagnosis",
-    "icon": "fa-user-md",
-    "order": 1,
-    "requiredPrivilege": "app:clinical:diagnosisTab"
-  }
+      "url": "treatment",
+      "icon": "fa-user-md",
+      "order": 2,
+      "requiredPrivilege": "app:clinical:treatmentTab"
+    },
+"diagnosis": {
+  "id": "bahmni.clinical.consultation.diagnosis",
+  "extensionPointId": "org.bahmni.clinical.consultation.board",
+  "type": "link",
+  "label": "Diagnosis",
+  "translationKey":"DIAGNOSIS_BOARD_LABEL_KEY",
+  "url": "diagnosis",
+  "icon": "fa-user-md",
+  "order": 1,
+  "requiredPrivilege": "app:clinical:diagnosisTab"
+}
 }

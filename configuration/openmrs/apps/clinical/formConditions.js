@@ -28,249 +28,120 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'JIB_HepB at birth' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_HepB at birth'];
+    'JIB_Hep A' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Hep A'];
         if (fieldValue) {
             return {
-                show: ["JIB_HepB at birth, time administrered after birth"]
+                show: ["JIB_Hep A, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_HepB at birth, time administrered after birth"]
+                hide: ["JIB_Hep A, Date Given"]
             };
         }
     },
-    'JIB_MR***' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_MR***'];
+    'JIB_Hep B' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Hep B'];
         if (fieldValue) {
             return {
-                show: ["JIB_MR***, Date Given"]
+                show: ["JIB_Hep B, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_MR***, Date Given"]
+                hide: ["JIB_Hep B, Date Given"]
             };
         }
     },
-    'JIB_Polio1' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Polio1'];
+    'JIB_Polio' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Polio'];
         if (fieldValue) {
             return {
-                show: ["JIB_Polio1, Date Given"]
+                show: ["JIB_Polio, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_Polio1, Date Given"]
+                hide: ["JIB_Polio, Date Given"]
             };
         }
     },
-    'JIB_Polio2' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Polio2'];
+    'JIB_Measles' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Measles'];
         if (fieldValue) {
             return {
-                show: ["JIB_Polio2, Date Given"]
+                show: ["JIB_Measles, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_Polio2, Date Given"]
+                hide: ["JIB_Measles, Date Given"]
             };
         }
     },
-    'JIB_Polio3' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Polio3'];
+    'JIB_Mumps' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Mumps'];
         if (fieldValue) {
             return {
-                show: ["JIB_Polio3, Date Given"]
+                show: ["JIB_Mumps, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_Polio3, Date Given"]
+                hide: ["JIB_Mumps, Date Given"]
             };
         }
     },
-    'JIB_IPV' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_IPV'];
+    'JIB_Rubella' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Rubella'];
         if (fieldValue) {
             return {
-                show: ["JIB_IPV, Date Given"]
+                show: ["JIB_Rubella, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_IPV, Date Given"]
+                hide: ["JIB_Rubella, Date Given"]
             };
         }
     },
-    'JIB_DTP-Hep-Hip1' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_DTP-Hep-Hip1'];
+    'JIB_Diphtheria' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Diphtheria'];
         if (fieldValue) {
             return {
-                show: ["JIB_DTP-Hep-Hip1, Date Given"]
+                show: ["JIB_Diphtheria, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_DTP-Hep-Hip1, Date Given"]
-            };
-        }
-    },'JIB_DTP-Hep-Hip2' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_DTP-Hep-Hip2'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_DTP-Hep-Hip2, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_DTP-Hep-Hip2, Date Given"]
+                hide: ["JIB_Diphtheria, Date Given"]
             };
         }
     },
-    'JIB_DTP-Hep-Hip3' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_DTP-Hep-Hip3'];
+    'JIB_Pertussis' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Pertussis'];
         if (fieldValue) {
             return {
-                show: ["JIB_DTP-Hep-Hip3, Date Given"]
+                show: ["JIB_Pertussis, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_DTP-Hep-Hip3, Date Given"]
+                hide: ["JIB_Pertussis, Date Given"]
             };
         }
     },
-    'JIB_PCV1' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_PCV1'];
+    'JIB_Tetanus' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['JIB_Tetanus'];
         if (fieldValue) {
             return {
-                show: ["JIB_PCV1, Date Given"]
+                show: ["JIB_Tetanus, Date Given"]
             };
         }
         else {
             return {
-                hide: ["JIB_PCV1, Date Given"]
-            };
-        }
-    },
-    'JIB_PCV2' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_PCV2'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_PCV2, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_PCV2, Date Given"]
-            };
-        }
-    },
-    'JIB_PCV3' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_PCV3'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_PCV3, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_PCV3, Date Given"]
-            };
-        }
-    },
-    'JIB_MR1' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_MR1'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_MR1, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_MR1, Date Given"]
-            };
-        }
-    },
-    'JIB_JE' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_JE'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_JE, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_JE, Date Given"]
-            };
-        }
-    },
-    'JIB_Tetanus1' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Tetanus1'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_Tetanus1, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_Tetanus1, Date Given"]
-            };
-        }
-    },
-    'JIB_Tetanus2' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Tetanus2'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_Tetanus2, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_Tetanus2, Date Given"]
-            };
-        }
-    },
-    'JIB_Tetanus3' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Tetanus3'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_Tetanus3, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_Tetanus3, Date Given"]
-            };
-        }
-    },
-    'JIB_Tetanus4' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Tetanus4'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_Tetanus4, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_Tetanus4, Date Given"]
-            };
-        }
-    },
-    'JIB_Tetanus5' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['JIB_Tetanus5'];
-        if (fieldValue) {
-            return {
-                show: ["JIB_Tetanus5, Date Given"]
-            };
-        }
-        else {
-            return {
-                hide: ["JIB_Tetanus5, Date Given"]
+                hide: ["JIB_Tetanus, Date Given"]
             };
         }
     },
